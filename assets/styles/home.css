@@ -9,7 +9,6 @@ body{
     background-color: white;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: hidden;
     
     padding: 0px;
     margin:0px;
@@ -33,10 +32,11 @@ body{
     animation: animate 1.2s linear infinite;
 }
 #page{
+    display: none;
     width: 100vw;
     min-height: 100vh;
     height: auto;
-    overflow-y: scroll;
+    overflow-y: ;
 }
 
 @keyframes animate {
@@ -80,7 +80,7 @@ body{
     right: 10px;
     bottom: 10px;
     background: #f1f1f1;
-    border: solid white 10px;
+    border: solid transparent 10px;
     border-radius: 50%;
 }
 nav h2{
@@ -139,7 +139,83 @@ nav div button:hover{
 }
 .card{
     height: calc(100vh - 60px);
-    width: 100vw;
+    width: calc(100vw - 100px);
     background-position: center;
     background-size: cover;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.card h1{
+    margin: 0px;
+}
+#card1{
+    line-height: calc(100vh - 60px);
+}
+#card1 h1{
+    font-size: 100px;
+}
+#card2{
+    height: 40vh;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+#card2 h1{
+    font-size: 50px;
+}
+#card2 p{
+    font-size: 20px;
+}
+#card2 button{
+    border: none;
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 100%;
+    background-color: #00884f;
+    color: white;
+}
+.dual-card{
+    width: 100vw;
+    height: 50vh;
+}
+.dual-card-part{
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:white;
+    padding: 0px;
+    padding-top: 5px;
+    height: 100%;
+    margin: 0px;
+    display: inline-block;
+}
+.dual-card-part button{
+    border-radius: 50px;
+    background-color: maroon;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    font-size: 100%;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }

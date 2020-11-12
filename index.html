@@ -3,6 +3,7 @@
     <head>
         <title>HOME || Alitalia Virtual</title>
         <link rel="stylesheet" href="assets/styles/home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="loader">
@@ -18,7 +19,40 @@
                 <img src="assets/images/logo.png" height="100%"><h2>Alitalia Virtual</h2>
                 <div style="float: right;"><h2><a class="active" href="index.html">Home</a></h2><h2><a href="about.html">About</a></h2><h2><a href="fleet.html">Fleet</a></h2><h2><a href="ranks.html">Ranks</a></h2><h2><a href="network.html">Network</a></h2><h2><a href="apply.html">Apply</a></h2><button onclick="window.location.href='https://cc.alitaliavirtual.it'">Login</button></div>
             </nav>
-            <div class="card" style="background-image: url('assets/images/PIC-LANDING-TOUCH.jpeg');"></div>
+            <div class="card" id="card1" style="background-image: url('assets/images/PIC-CRUISE-HIGH.jpeg');">
+                <h1>Made to fly high</h1>
+            </div>
+            <div class="card" id="card2" style="background-color:green">
+                <h1>We are Alitalia Virtual</h1><br>
+                <p>
+                    <strong>Modeled after Italy's leading global carrier</strong> <br><br>
+
+                    Alitalia Virtual is a virtual airline created for users of the Infinite Flight simulator. We strive to recreate the
+                    operations of Alitalia, Italy's flag carrier. We are not affiliated with the real Alitalia airline company, SkyTeam or
+                    any of their respective subsidiaries.<br><br>
+
+                    <button onclick="window.location.href='about.html'">Learn More</button>
+                </p>
+            </div>
+            <div class="dual-card">
+                <div class="dual-card-part" style="float: left; background-image: url('assets/images/PIC-CRUISE.jpeg');">
+                <h1>Fleet</h1><br>
+                <p>Our varied fleet gives pilots the chance to refine their skills on multiple aircraft types, which are operated on a wide
+                variety of routes</p><br><br>
+                <button onclick="window.location.href='fleet.html'">More</button>
+                </div>
+                <div class="dual-card-part" style="float: right; background-image: url('assets/images/PIC-HILLS.jpeg');">
+                    <h1>Destinations</h1><br>
+                    <p>At the height of our operations, when all seasonal routes are active, we fly to 107 destinations, 27 in Italy & 80 in
+                    the rest of the world: the possibilities are endless</p><br><br>
+                    <button onclick="window.location.href='network.html'">Discover</button>
+                </div>
+            </div>
+            <footer>
+                &#169 2020 by Alitalia Virtual. Alitalia Virtual (AZVA) is a fictional creation meant for users of the Infinite Flight
+                simulator. We are not affiliated with, nor do we represent, the real Alitalia airline company. All logos are the
+                property of Alitalia, SkyTeam and/or Infinite Flight.
+            </footer>
         </div>
         <script src="assets/js/loading.js"></script>
     </body>
