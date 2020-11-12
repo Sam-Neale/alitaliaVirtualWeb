@@ -36,7 +36,6 @@ body{
     width: 100vw;
     min-height: 100vh;
     height: auto;
-    overflow-y: ;
 }
 
 @keyframes animate {
