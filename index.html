@@ -1,59 +1,76 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>HOME || Alitalia Virtual</title>
-        <link rel="stylesheet" href="assets/styles/home.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div id="loader">
-            <div id="spinner">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <head>
+    <title>HOME || Alitalia Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="assets/styles/scrollbar.css" rel="stylesheet">
+    <link href="assets/styles/home.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="assets/images/logo.png" alt="alitaliaLogo" width="30" height="30">
+        </a>
+        <a class="navbar-brand" href="/">Alitalia Virtual</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fleet.html">Our Fleet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranks.html">Our Ranks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="network.html">Our Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="apply.html">Apply</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-success" onclick="window.location.href='https://cc.alitaliavirtual.it'">Login</button>
         </div>
-        <div id="page">
-            <nav>
-                <img src="assets/images/logo.png" height="100%"><h2>Alitalia Virtual</h2>
-                <div style="float: right;"><h2><a class="active" href="index.html">Home</a></h2><h2><a href="about.html">About</a></h2><h2><a href="fleet.html">Fleet</a></h2><h2><a href="ranks.html">Ranks</a></h2><h2><a href="network.html">Network</a></h2><h2><a href="apply.html">Apply</a></h2><button onclick="window.location.href='https://cc.alitaliavirtual.it'">Login</button></div>
-            </nav>
-            <div class="card" id="card1" style="background-image: url('assets/images/PIC-CRUISE-HIGH.jpeg');">
-                <h1>Made to fly high</h1>
-            </div>
-            <div class="card" id="card2" style="background-color:green">
-                <h1>We are Alitalia Virtual</h1><br>
-                <p>
-                    <strong>Modeled after Italy's leading global carrier</strong> <br><br>
-
-                    Alitalia Virtual is a virtual airline created for users of the Infinite Flight simulator. We strive to recreate the
-                    operations of Alitalia, Italy's flag carrier. We are not affiliated with the real Alitalia airline company, SkyTeam or
-                    any of their respective subsidiaries.<br><br>
-
-                    <button onclick="window.location.href='about.html'">Learn More</button>
-                </p>
-            </div>
-            <div class="dual-card">
-                <div class="dual-card-part" style="float: left; background-image: url('assets/images/PIC-CRUISE.jpeg');">
-                <h1>Fleet</h1><br>
-                <p>Our varied fleet gives pilots the chance to refine their skills on multiple aircraft types, which are operated on a wide
-                variety of routes</p><br><br>
-                <button onclick="window.location.href='fleet.html'">More</button>
-                </div>
-                <div class="dual-card-part" style="float: right; background-image: url('assets/images/PIC-HILLS.jpeg');">
-                    <h1>Destinations</h1><br>
-                    <p>At the height of our operations, when all seasonal routes are active, we fly to 107 destinations, 27 in Italy & 80 in
-                    the rest of the world: the possibilities are endless</p><br><br>
-                    <button onclick="window.location.href='network.html'">Discover</button>
-                </div>
-            </div>
-            <footer>
-                &#169 2020 by Alitalia Virtual. Alitalia Virtual (AZVA) is a fictional creation meant for users of the Infinite Flight
-                simulator. We are not affiliated with, nor do we represent, the real Alitalia airline company. All logos are the
-                property of Alitalia, SkyTeam and/or Infinite Flight.
-            </footer>
-        </div>
-        <script src="assets/js/loading.js"></script>
-    </body>
+      </div>
+    </nav>
+    <img src="assets/images/BOIS.png" class="w-100 img-fluid" height="50%">
+    <div class="w-100 bg-success text-center text-light p-5">
+      <h1>We are Alitalia Virtual</h1><br>
+      <h4>Moddled after Italy's global carrier</h4><br>
+      <p>Alitalia Virtual is a virtual airline created for users of the Infinite Flight simulator. We strive to recreate the
+      operations of Alitalia, Italy's flag carrier. We are not affiliated with the real Alitalia airline company, SkyTeam or
+      any of their respective subsidiaries.</p><br>
+      <a href="http://www.alitalia.com/" class="text-light fs-5">Click here to visit the Alitalia Official Site</a><br><br>
+      <a href="http://www.skyteam.com/" class="text-light fs-5">Click here to visit the SkyTeam Official Site</a><br><br>
+      <button class="btn rounded btn-outline-light" onclick="window.location.href='about.html'">Learn More</button>
+    </div>
+    <div class="w-100 container m-0 p-0">
+      <div class="row row-cols-1 row-cols-md-3 g-5 align-items-center justify-content-center m-0" style="height: 50vh; width: 100vw;">
+      <div class="col bg-dark text-center w-50 m-0 p-3 h-100 text-light wonsmal" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('assets/images/PIC-DEPARTURE-TAKEOFF.jpeg'); background-size: cover; background-position: center;">
+        <h1>The Fleet</h1><br><br>
+        <p>Our varied fleet gives pilots the chance to refine their skills on multiple aircraft types, which are operated on a wide
+        variety of routes</p>
+        <button class="btn rounded btn-danger">More</button>
+      </div><div class="col text-center w-50 m-0 h-100 pt-3 text-light wonsmal" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/PIC-CRUISE-IN-ENGINE.jpeg'); background-size: cover; background-position: center;">
+        <h1>The Routes</h1><br><br>
+        <p>At the height of our operations, when all seasonal routes are active, we fly to 107 destinations, 27 in Italy & 80 in
+        the rest of the world: the possibilities are endless.</p>
+        <button class="btn rounded btn-danger">Discover</button>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
 </html>

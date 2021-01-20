@@ -1,0 +1,22 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.half-box-container{
+    height: auto;
+}
+.half-box{
+    height: 100%;
+}
+@media only screen and (max-width:600px){
+.half-box{
+    width: 100% !important;
+    height: auto !important;
+}
+}
