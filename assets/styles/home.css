@@ -1,10 +1,19 @@
 .wonsmal{
     overflow-y: scroll;
 }
+.wonsmal::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for IE, Edge and Firefox */
+.wonsmal {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 @media only screen and (max-width: 600px){
     .wonsmal{
         width: 100% !important;
-        height: 60vh;
+        height: 70vh;
+        padding-bottom: 1.5rem;
     }
 }

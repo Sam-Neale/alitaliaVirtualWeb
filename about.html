@@ -8,9 +8,22 @@
     <link href="assets/styles/scrollbar.css" rel="stylesheet">
     <link href="assets/styles/home.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tsmall h1{
+            font-size: 4vh;
+        }
+        @media only screen and (max-width: 800px){
+            .tsmall{
+                width:100vw !important;
+                height: 50vh !important;
+                border-bottom: 1px solid black;
+                padding-top: 5vh;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-dark">
+<body style="background-color: black;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -66,31 +79,22 @@
         Alitalia Virtual vola con te
         Alitalia Virtual flies with you</strong></p>
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
+    <div id="staffContainer" class="w-100 text-light text-center" style="height: 20vw; background-color: rgba(255,255,255,0.5)">
+        <div id="CEOStaff" class="float-start py-1 tsmall" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/CEO.jpg'); background-size: contain; background-position: center center; height:20vw; width:20vw; background-color: white; background-repeat: no-repeat; ">
+            <h1>CEO, Alessandro</h1>
+        </div><div id="COOStaff" class="float-start py-1 tsmall"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/COO.jpg'); background-size: contain; background-position: center center; height:20vw; width:20vw; background-color: white; background-repeat: no-repeat; ">
+            <h1>COO, Miguel</h1>
+        </div><div id="PRStaff" class="float-start py-1 tsmall"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/HoPR.jpg'); background-size: contain; background-position: center center; height:20vw; width:20vw; background-color: white; background-repeat: no-repeat; ">
+            <h1>Head of PR, Valerio</h1>
+        </div><div id="IAStaff" class="float-start py-1 tsmall"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/HoIA.jpg'); background-size: contain; background-position: center center; height:20vw; width:20vw; background-color: white; background-repeat: no-repeat; ">
+            <h1>Head of IA, Ivan</h1>
+        </div><div id="HRStaff" class="float-start py-1 tsmall"
+            style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/HoHR.jpg'); background-size: contain; background-position: center center; height:20vw; width:20vw; background-color: white; background-repeat: no-repeat; ">
+            <h1>Head of HR, Mattia</h1>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
